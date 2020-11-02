@@ -1,6 +1,5 @@
 import React from 'react'
-import {Button} from 'reactstrap'
-import { Container } from './styles'
+import { Container, BtSelection, BtNext } from './styles';
  
 export default function index(props) {
   const sentimento = [
@@ -19,14 +18,14 @@ export default function index(props) {
   ]
   return (
     <Container>
-      <h1>Selecione o <b>Sentimento</b> para podermos prosseguir</h1>
-      <div className="d-flex">
+      <h1 className="mx-5 text-white">Selecione o <b>Sentimento</b> para podermos prosseguir</h1>
+      <div className="d-flex m-5 row">
         {sentimento.map( st => 
-          <Button className="mx-3" key={st.id}>{st.name}</Button>
+          <BtSelection className="col-3 m-3" key={st.id}>{st.name}</BtSelection>
         )}
       </div>
       <div>
-        <Button color="primary" onClick={() => props.setStep(4)}>Próximo Passo</Button>
+        <BtNext color="primary m-5" onClick={() => props.setStep(4)}>Próximo Passo</BtNext>
       </div>
     </Container>
   )

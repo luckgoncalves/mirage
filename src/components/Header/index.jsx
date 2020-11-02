@@ -27,13 +27,13 @@ const Header = (props) => {
               <NavLink href="/paper">Paper</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/new-composition">Nova Composição</NavLink>
+              <NavLink href="#">Nova Composição</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/my-composition">Minhas Composições</NavLink>
+              <NavLink href="#">Minhas Composições</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/settings">Configurações</NavLink>
+              <NavLink href="#">Configurações</NavLink>
             </NavItem>
           </Nav>
           {/* <NavbarText>Simple Text</NavbarText> */}

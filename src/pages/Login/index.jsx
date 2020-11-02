@@ -12,6 +12,8 @@ function Login() {
         <h1 className="text-white">mirage</h1>
       </div>
     <FormLogin>
+
+      <h2 className="mb-5">Faça o login</h2>
       <FormGroup row>
         <Label for="exampleEmail" sm={2}>Nome</Label>
         <Col sm={10}>
@@ -25,9 +27,7 @@ function Login() {
         </Col>
       </FormGroup>
       <FormGroup check row>
-        <Col sm={{ size: 10, offset: 2 }}>
-          <BtSubmit to="/paper">Submit</BtSubmit>
-        </Col>
+        <BtSubmit to="/paper">Login</BtSubmit>
       </FormGroup>
     </FormLogin>
     </Container>

@@ -22,8 +22,15 @@ export const BtSubmit = styled(Link)`
 `;
 
 export const FormLogin = styled(Form) `
-  background-color: #fff;
   width: 552px;
   height: 484px;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
 `;

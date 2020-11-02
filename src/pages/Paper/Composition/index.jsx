@@ -7,15 +7,17 @@ function Composition(props) {
   return (
     <Container>
       <div className="d-flex justify-content-between mb-5">
-        <div>
-          Nome da composição
+        <div className="d-flex align-items-center justify-content-center">
+          <h1 className="text-white">
+            Nome da composição
+          </h1>
         </div>
         <div>
           <Button style={{background: '#0CAE1C', color: '#FFF'}} onClick={() => props.setStep(4)}>Voltar</Button>
           <Button>Salvar</Button>
         </div>
       </div>
-      <Card body className='text-center'>
+      <Card body className='text-center' style={{overflowY: 'auto', height: '100%'}}>
         <CardText>
           <p>
             Meu amor, cigano, amor
